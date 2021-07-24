@@ -53,5 +53,9 @@ mysqli_close($conn);
 
 </section>
 
+<footer class="footer-text">
+<p>&copy;Aditya Bikram Arandhara</p>
+</footer>
+
     </body>
 </html>

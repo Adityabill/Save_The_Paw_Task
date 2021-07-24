@@ -59,7 +59,7 @@ if(isset($_POST['submit'])){
 </form>
 </section>
 
-<?php include("templates/Footer.php"); ?>
+
 
     </body>
 </html>

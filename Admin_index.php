@@ -6,6 +6,7 @@ if(!$conn){
     echo "Connection error: ". mysqli_connect_error();
 }
 
+
 $sql = 'select * from blogs';
 
 //storing the query results in '$result' variable 
@@ -50,8 +51,10 @@ mysqli_close($conn);
     <h5 class="card-title"><?php echo htmlspecialchars($blog['Blog_Title']); ?></h5>
     <p><small>By - <?php echo htmlspecialchars($blog['Blog_Author']) ?> </small> </p>
     <p><?php echo htmlspecialchars($blog['Blog_Content']) ?> </p>
-    <div class="">
-<a class="btn btn-danger add-button" href="">Remove this blog</a>
+    
+
+    <div class="blog-btn-div"> 
+        <a href="Remove_Blog.php" target="blank" class="btn btn-danger add-button">Remove this blog</a>  
 </div>
     <p><small>Posted on: <?php echo htmlspecialchars($blog['Posted_On']); ?></small></p>
   </div>
@@ -62,7 +65,9 @@ mysqli_close($conn);
 
 </section>
 
-<?php include("templates/Footer.php"); ?>
+<footer class="footer-text">
+<p>&copy;Aditya Bikram Arandhara</p>
+</footer>
 
     </body>
 </html>

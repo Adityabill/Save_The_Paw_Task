@@ -30,3 +30,19 @@
 .add-button{
     margin-left: 10px;
 }
+
+.blog-review-btn{
+    margin: 10px;
+}
+
+.blog-btn-div{
+    display: inline-block;
+}
+
+footer{
+    background-color: black;
+}
+
+.footer-text{
+    color: white;
+}
