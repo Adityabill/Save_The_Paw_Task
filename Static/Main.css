@@ -14,8 +14,19 @@
     border-style: solid;
 }
 
+.blog-border{
+    border-radius: 5px;
+    border: 5px;
+    border-style: double;
+}
+
 /*Admin Login*/
 .inputs-spacing{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+/*Admin Index */
+.add-button{
+    margin-left: 10px;
 }

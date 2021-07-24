@@ -27,15 +27,21 @@ mysqli_close($conn);
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Our Blogs</title>
+        <title>Admin Page</title>
         <link href="Static/Main.css" rel="stylesheet">
    <h1 class="head-text-align">Save the Paws</h1>
         <?php
         include('templates/header.php')
         ?>
 
+<section>
+    <div class="">
+<a class="btn btn-primary add-button" href="Add_Blog.php">Add Blogs</a>
+</div>
+</section>
 
 <section>
+
 <?php foreach($blogs as $blog){ ?>
 <div class="blog-div blog-border">
 <div class="card" style="width: 18rem;">
@@ -44,6 +50,9 @@ mysqli_close($conn);
     <h5 class="card-title"><?php echo htmlspecialchars($blog['Blog_Title']); ?></h5>
     <p><small>By - <?php echo htmlspecialchars($blog['Blog_Author']) ?> </small> </p>
     <p><?php echo htmlspecialchars($blog['Blog_Content']) ?> </p>
+    <div class="">
+<a class="btn btn-danger add-button" href="">Remove this blog</a>
+</div>
     <p><small>Posted on: <?php echo htmlspecialchars($blog['Posted_On']); ?></small></p>
   </div>
 </div>
@@ -52,6 +61,8 @@ mysqli_close($conn);
 
 
 </section>
+
+<?php include("templates/Footer.php"); ?>
 
     </body>
 </html>

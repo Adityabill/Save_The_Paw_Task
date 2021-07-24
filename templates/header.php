@@ -25,7 +25,7 @@
     <h5 class="text-white h4">Our Blogs</h5>
     <ul>
     <li><a href="" class="nav-link">Home</a></li>
-    <li><a href="" class="nav-link">Our Blogs</a></li>
+    <li><a href="index.php" class="nav-link">Our Blogs</a></li>
     <li><a href="Admin_login.php" class="nav-link">Admin Login</a></li>
     <li><a href="" class="nav-link">Contact Us</a></li>
       </ul>
